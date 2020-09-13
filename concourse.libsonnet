@@ -2,6 +2,7 @@
   GitResource(name, repository, branch = 'master'):: {
     name: name,
     type: 'git',
+    icon: 'git',
     source: {
       uri: repository,
       branch: branch
@@ -11,6 +12,7 @@
   DockerResource(name, repository, tag = 'latest', allow_insecure = false):: {
     name: name,
     type: 'docker-image',
+    icon: 'docker',
     source: {
       repository: repository,
       tag: tag
